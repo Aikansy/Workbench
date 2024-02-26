@@ -1,0 +1,3 @@
+# **ELEMENT DE DONNEES - PROPRIETES**
+
+Le premier onglet est exactement le même que pour le [DOMAINE](./08_SE11/02_Domaines.md) (et comme beaucoup d’objets [DDIC](./01_SE11.md)) à savoir le nom de l’_utilisateur_, la _date_ de la dernière modification, le _package_...
