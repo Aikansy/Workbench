@@ -2,8 +2,14 @@
 
 ## SOMMAIRE
 
-- [SAP Abap](./SAP%20Abap/README.md)
-- [SAP Cloud](./SAP%20Cloud/README.md)
-- [SAP Fiori](./SAP%20Fiori/README.md)
-- [SAP Programs](./SAP%20Programs/README.md)
-- [SAP Snippets](./SAP%20Snippets/README.md)
+- [ABAP](./ABAP/README.md)
+
+- [CLOUD](./CLOUD/README.md)
+
+- [DEBUGGER](./DEBUGGER/README.md)
+
+- [FIORI](./FIORI/README.md)
+
+- [PROGRAMS](./PROGRAMS/README.md)
+
+- [SNIPPETS](./SNIPPETS/README.md)
