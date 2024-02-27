@@ -12,6 +12,8 @@
 
 - [TCODE_ME23N](./TCODE_ME23N.md)
 
+- [TCODE_MIGO](./TCODE_MIGO.md)
+
 - [TCODE_MIRO](./TCODE_MIRO.md)
 
 - [TCODE_SE01](./TCODE_SE01.md)

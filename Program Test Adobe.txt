@@ -1,0 +1,38 @@
+SFP - Table
+
+	Description			Quantity	Unit.Price		Price
+	
+	XXXXX				XXXXX		X				XXXXX
+	
+	XXXXX				XXXXX		X				XXXXX
+	
+									Total HT		XXXXX
+									TVA				XXXXX
+									
+									TOTAL TTC		XXXXX
+									
+DATAS:
+
+	Client 	Number						
+			Name
+			Adress
+			Postal Code
+			City
+			Country
+			
+	Order	Number			X
+	
+	Posts	Description		VBAP-ARKTX
+			Quantity		VBEP-WMENG
+			Unité de vente	VBEP-VRKME
+			Unit.Price		VBAP-NETPR
+			Price			VBAP-
+			
+			Total HT		VBAK-
+			TVA				VBAK-
+			Total TTC		VBAK-
+			
+	SENDER	Adress
+			City
+			Country
+			Mail
