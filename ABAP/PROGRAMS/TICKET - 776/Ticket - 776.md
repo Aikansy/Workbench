@@ -203,7 +203,7 @@ Cela permettra de générer une nouvelle `demande de facture` via la [Transactio
 
 ## PROGRAM
 
-### [SE80] SAPMV45A
+### [SE80]() SAPMV45A
 
 ```abap
 FORM USEREXIT_SAVE_DOCUMENT.
@@ -225,7 +225,7 @@ FORM USEREXIT_SAVE_DOCUMENT.
 ENDFORM.
 ```
 
-### [SE24] _CLASS_
+### [SE24]() _CLASS_
 
 - CLASS: ZCL_SD_COMMON_TOOLS
 
@@ -412,7 +412,7 @@ ENDFORM.
   ENDMETHOD.
 ```
 
-### [SE80] ZSD_CANCEL_CS
+### [SE80]() ZSD_CANCEL_CS
 
 ```abap
 *&---------------------------------------------------------------------*
@@ -458,7 +458,7 @@ START-OF-SELECTION.
 END-OF-SELECTION.
 ```
 
-### [SE80] ZSD_CANCEL_CS_SCR
+### [SE80]() ZSD_CANCEL_CS_SCR
 
 ```abap
 *&---------------------------------------------------------------------*
@@ -468,7 +468,7 @@ END-OF-SELECTION.
 PARAMETERS: P_AUFNR TYPE AUFNR OBLIGATORY.
 ```
 
-### [SE80] ZSD_CANCEL_CS_F01
+### [SE80]() ZSD_CANCEL_CS_F01
 
 ```abap
 *&---------------------------------------------------------------------*

@@ -152,7 +152,7 @@ La transaction Z_EXP_CC lance le programme Z_RPTFI_EXP_CC et affiche les donnée
 
 ## PROGRAM
 
-### [SE80] Z_EXP_CC_M_18714
+### [SE80]() Z_EXP_CC_M_18714
 
 ```abap
 *&---------------------------------------------------------------------*
@@ -182,7 +182,7 @@ END-OF-SELECTION.
   PERFORM data_displaying.
 ```
 
-### [SE80] Z_EXP_CC_M_18714_LCL
+### [SE80]() Z_EXP_CC_M_18714_LCL
 
 ```abap
 *----------------------------------------------------------------------*
@@ -406,7 +406,7 @@ CLASS zcl_create_xlsx IMPLEMENTATION.
 ENDCLASS.               "zcl_xlsx
 ```
 
-### [SE80] Z_EXP_CC_M_18714_TOP
+### [SE80]() Z_EXP_CC_M_18714_TOP
 
 ```abap
 *&---------------------------------------------------------------------*
@@ -455,7 +455,7 @@ DATA: gr_table  TYPE REF TO cl_salv_table,
       gr_events TYPE REF TO zcl_handler_events.
 ```
 
-### [SE80] Z_EXP_CC_M_18714_SCR
+### [SE80]() Z_EXP_CC_M_18714_SCR
 
 ```abap
 *&---------------------------------------------------------------------*
@@ -470,7 +470,7 @@ SELECT-OPTIONS: s_hkont FOR bseg-hkont, "GL account
                 s_ebeln FOR bseg-ebeln. "Purchase order number
 ```
 
-### [SE80] Z_EXP_CC_M_18714_F01
+### [SE80]() Z_EXP_CC_M_18714_F01
 
 ```abap
 *&---------------------------------------------------------------------*
