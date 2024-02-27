@@ -8,7 +8,7 @@ L'_algorithme_ est la dernière étape avant le [DEVELOPPEMENT](04_Développemen
 >
 > L'algorithme sera alors :
 >
-> ```MD
+> ```js
 > ECRAN DE SELECTION
 >
 > Sélection multiple CODE_PAYS (obligatoire)        PRODUITS

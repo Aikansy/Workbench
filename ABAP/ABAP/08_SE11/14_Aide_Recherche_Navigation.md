@@ -8,7 +8,7 @@ Comme vu dans la section précédente, les informations de l’aide à la recher
 
 ![](../ressources/08_14_02.png)
 
-La procédure suivie pour arriver à cette fenêtre est différente de ce qui a été vu précédemment, mais si le nom de l’_aide à la recherche_ est connu d’avance, il est possible d’y accéder via la [TRANSACTION `SE11`](), de cliquer sur l’option `Aide à la recherche`, puis d’entrer son nom (`S_MAT1` pour cet exemple).
+La procédure suivie pour arriver à cette fenêtre est différente de ce qui a été vu précédemment, mais si le nom de l’_aide à la recherche_ est connu d’avance, il est possible d’y accéder via la [TRANSACTION SE11](../22_Transactions/TCODE_SE11.md), de cliquer sur l’option `Aide à la recherche`, puis d’entrer son nom (`S_MAT1` pour cet exemple).
 
 Ici, pas de nouveauté concernant la barre d’outils, il ne s’agit que de fonctionnalités déjà vues. L’_aide à la recherche_ `S_MAT1` est de type groupée. Il en existe deux types :
 
@@ -20,7 +20,7 @@ Chaque _aide à la recherche groupée_ est toujours composée d’_élémentaire
 
 Ainsi `S_MAT1` se définit de la façon suivante (onglet `Définition`) :
 
-- Il utilise l’[EXIT]() `S_MAT1_F4_HELP_EXIT`. Un [EXIT]() sur **SAP** (_sortie_ en français) est un moyen pour sortir du traitement en cours, pour effectuer une tâche spécifique. Dans un programme standard, un [EXIT]() est utile pour sortir de l’[ALGORITHME]() du standard afin d’y inclure des règles ou des modifications spécifiques. Dans le cas de l’_aide à la recherche_, il peut être utile de faire une _présélection des données_. Si, par exemple, dans la [TRANSACTION `MM03`]() se trouvait un champ Pays renseigné avec `FR`, l’[EXIT]() proposerait tous les produits disponibles en France et l’_aide à la recherche_ les listerait.
+- Il utilise l’[EXIT](../21_User_Exit/README.md) `S_MAT1_F4_HELP_EXIT`. Un [EXIT](../21_User_Exit/README.md) sur **SAP** (_sortie_ en français) est un moyen pour sortir du traitement en cours, pour effectuer une tâche spécifique. Dans un programme standard, un [EXIT](../21_User_Exit/README.md) est utile pour sortir de l’[ALGORITHME]() du standard afin d’y inclure des règles ou des modifications spécifiques. Dans le cas de l’_aide à la recherche_, il peut être utile de faire une _présélection des données_. Si, par exemple, dans la [TRANSACTION MM03]() se trouvait un champ Pays renseigné avec `FR`, l’[EXIT](../21_User_Exit/README.md) proposerait tous les produits disponibles en France et l’_aide à la recherche_ les listerait.
 
 - Une autre partie de l’écran affiche des `paramètres` qui ne sont pas très parlants dans le cas d’une _aide à la recherche groupée_.
 
@@ -48,7 +48,7 @@ Plusieurs paramètres définissent l’_aide à la recherche élémentaire_, à 
 
     - `Dialogue dépendant de l’ensemble de valeurs` choisira l’option la plus adéquate : si le nombre d’entrées est inférieur à 100, alors l’aide à la recherche affichera toutes les entrées sinon elle ouvrira une boîte de dialogue pour restreindre la sélection.
 
-  - `Cde abrégée` est un identifiant utilisé comme raccourci pour appeler une aide à la recherche élémentaire. Pour poursuivre l’exemple du champ `Article` de la [transaction `MM03`](), l’aide à la recherche associée est composée de nombreuses élémentaires. D’autre part, le code lié à celui du Numéro/désignation d’article (`MAT0M`) est défini par la lettre `M`. Ainsi dans le champ de l’article, il suffit d’écrire =M puis la touche `[F4]`, afin que la boîte de dialogue de l’aide à la recherche `MAT0M` s’ouvre automatiquement.
+  - `Cde abrégée` est un identifiant utilisé comme raccourci pour appeler une aide à la recherche élémentaire. Pour poursuivre l’exemple du champ `Article` de la [TRANSACTION MM03](), l’aide à la recherche associée est composée de nombreuses élémentaires. D’autre part, le code lié à celui du Numéro/désignation d’article (`MAT0M`) est défini par la lettre `M`. Ainsi dans le champ de l’article, il suffit d’écrire =M puis la touche `[F4]`, afin que la boîte de dialogue de l’aide à la recherche `MAT0M` s’ouvre automatiquement.
 
   ![](../ressources/08_14_04.png)
 

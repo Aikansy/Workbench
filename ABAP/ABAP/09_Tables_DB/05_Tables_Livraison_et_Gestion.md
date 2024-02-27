@@ -22,6 +22,6 @@ Dans le chapitre traitant du [MANDANT](../03_Programmation/01_Mandant.md) **SAP*
 
   > En général, les classes de livraison les plus utilisées pour un développement spécifique, sont les `classes A` (`Applicative`) et `C` ([CUSTOMIZING]()).
 
-  Ensuite l’option Gestion Data Browser/vue [TABLE](./01_Tables.md) indique si les données d’une [TABLE](./01_Tables.md) peuvent être modifiables ou non dans le navigateur de données (Data Browser) exécutable avec la [TRANSACTION `SE16`]() ou la [TRANSACTION `SE16N`]().
+  Ensuite l’option Gestion Data Browser/vue [TABLE](./01_Tables.md) indique si les données d’une [TABLE](./01_Tables.md) peuvent être modifiables ou non dans le navigateur de données (Data Browser) exécutable avec la [TRANSACTION SE16](../22_Transactions/TCODE_SE16.md) ou la [TRANSACTION SE16N](../22_Transactions/TCODE_SE16N.md).
 
 ![](../ressources/09_05_03.png)

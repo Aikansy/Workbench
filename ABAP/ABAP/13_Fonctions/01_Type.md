@@ -2,9 +2,9 @@
 
 La `fonction` ou plus exactement le `module fonction` est un outil indispensable à la programmation. En effet, il permet d’isoler un traitement spécifique (conversion, récupération d’informations, gestion de données...).
 
-L’éditeur de gestion des `fonctions` se fait via la [TRANSACTION `SE37`](). Il est possible d’y accéder par ces différents moyens :
+L’éditeur de gestion des `fonctions` se fait via la [TRANSACTION SE37](../22_Transactions/TCODE_SE37.md). Il est possible d’y accéder par ces différents moyens :
 
-- Depuis n’importe quel écran, en renseignant la [TRANSACTION]() dans la zone de commande et en spécifiant si elle doit être exécutée dans une même session (`/nSE37`) ou dans une nouvelle (`/oSE37`).
+- Depuis n’importe quel écran, en renseignant la [TRANSACTION](../03_Programmation/03_Transactions.md) dans la zone de commande et en spécifiant si elle doit être exécutée dans une même session (`/nSE37`) ou dans une nouvelle (`/oSE37`).
 
 - À partir de la fenêtre d’accueil, dans le `menu SAP` par un double clic sur la ligne `Function Builder` (`éditeur de fonctions`) ou par un clic droit puis `Exécuter : Function Builder`.
 
@@ -72,7 +72,7 @@ En double cliquant dessus, plusieurs options de `fonctions` se sont présentées
 
 ![](../ressources/13_01_05.png)
 
-De retour à l’écran d’accueil de la [TRANSACTION `SE37`](), la `fonction` citée précédemment est donc choisie et renseignée dans le champ approprié.
+De retour à l’écran d’accueil de la [TRANSACTION SE37](../22_Transactions/TCODE_SE37.md), la `fonction` citée précédemment est donc choisie et renseignée dans le champ approprié.
 
 ![](../ressources/13_01_06.png)
 
@@ -110,7 +110,7 @@ Pour l’exemple de la `fonction` `CONVERSION_EXIT_MATN1_INPUT`, le `groupe fonc
 
 ![](../ressources/13_01_11.png)
 
-Un `groupe de fonctions` n’est ni plus ni moins qu’un `programme ABAP` central de type `F` possédant plusieurs objets techniques. Ainsi, dans l’écran d’accueil de la [TRANSACTION `SE37`](), il est possible de modifier le `groupe de fonctions` affecté à une `fonction` et lui en attribuer un autre grâce au bouton `Réaffecter`.
+Un `groupe de fonctions` n’est ni plus ni moins qu’un `programme ABAP` central de type `F` possédant plusieurs objets techniques. Ainsi, dans l’écran d’accueil de la [TRANSACTION SE37](../22_Transactions/TCODE_SE37.md), il est possible de modifier le `groupe de fonctions` affecté à une `fonction` et lui en attribuer un autre grâce au bouton `Réaffecter`.
 
 Pour revenir à l’éditeur du `module fonction`, il est possible de voir qu’il dispose de sept onglets. Le premier concerne comme d’habitude les `Propriétés` de la `fonction`, mais cette fois-ci il est nécessaire de s’y attarder un peu.
 

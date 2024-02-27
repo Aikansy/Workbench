@@ -26,7 +26,7 @@ En reprenant l'exemple précédent, mais cette fois-ci avec un système [ERP](),
 
 ![](../ressources/02_01_03.png)
 
-Dans ce cas, tout est organisé autour d'un système central sous forme d'une [BASE DE DONNEES](). Les informations traitées sont partagées et accessibles à tous les _départements_, il n'y a plus de risque de données manquantes ou redondantes, elles sont toujours à jour, car saisies une seule fois. Ainsi pour reprendre l'exemple du point de vente, lors d'une [TRANSACTION](../03_First%20Step/03_Transactions.md), le _bon de commande_ est saisi une seule fois et est transmis immédiatement aux _départements_ concernés (comptabilité, et gestion des stocks).
+Dans ce cas, tout est organisé autour d'un système central sous forme d'une [BASE DE DONNEES](). Les informations traitées sont partagées et accessibles à tous les _départements_, il n'y a plus de risque de données manquantes ou redondantes, elles sont toujours à jour, car saisies une seule fois. Ainsi pour reprendre l'exemple du point de vente, lors d'une [TRANSACTION](../03_Programmation/03_Transactions.md), le _bon de commande_ est saisi une seule fois et est transmis immédiatement aux _départements_ concernés (comptabilité, et gestion des stocks).
 
 Aujourd'hui, de plus en plus d'entreprise utilisent le modèle [ERP]() et dans cette catégorie, **SAP** est le progiciel le plus utilisé.
 

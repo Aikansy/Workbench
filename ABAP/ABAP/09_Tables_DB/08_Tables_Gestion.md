@@ -40,13 +40,13 @@ En fin de section, un exemple plus concret concernant le type de gestion sera d�
 
 - `Code de comparaison` est un identifiant permettant de modifier le comportement de contrôle des données à enregistrer.
 
-Pour utiliser un écran de gestion, il suffit d’exécuter la [TRANSACTION `SM30`]() dans la barre de commande, de renseigner le nom de la [TABLE](./01_Tables.md) dans la zone appropriée (Table/vue) et de cliquer sur le bouton `Afficher` ou `Gérer` (pour créer, modifier ou supprimer les enregistrements contenus dans la [TABLE](./01_Tables.md)) :
+Pour utiliser un écran de gestion, il suffit d’exécuter la [TRANSACTION SM30](../22_Transactions/TCODE_SM30.md) dans la barre de commande, de renseigner le nom de la [TABLE](./01_Tables.md) dans la zone appropriée (Table/vue) et de cliquer sur le bouton `Afficher` ou `Gérer` (pour créer, modifier ou supprimer les enregistrements contenus dans la [TABLE](./01_Tables.md)) :
 
 ![](../ressources/09_08_02.png)
 
 Le `premier niveau d’écran` apparaît. Il s’agit de l’écran de synthèse comme défini dans le type de gestion.
 
-Il a été vu également qu’une gestion pouvait contenir deux niveaux : un écran de synthèse et un écran individuel. Un exemple pour illustrer ce cas avec la `V_T005` (de nouveau exécution de la [TRANSACTION `SM30`](), puis le bouton `Afficher` après avoir renseigné la zone `Table/vue`). Comme vu précédemment, la gestion de la [TABLE](./01_Tables.md) s’ouvre automatiquement sur le premier niveau (écran de synthèse).
+Il a été vu également qu’une gestion pouvait contenir deux niveaux : un écran de synthèse et un écran individuel. Un exemple pour illustrer ce cas avec la `V_T005` (de nouveau exécution de la [TRANSACTION SM30](../22_Transactions/TCODE_SM30.md), puis le bouton `Afficher` après avoir renseigné la zone `Table/vue`). Comme vu précédemment, la gestion de la [TABLE](./01_Tables.md) s’ouvre automatiquement sur le premier niveau (écran de synthèse).
 
 ![](../ressources/09_08_03.png)
 

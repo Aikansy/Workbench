@@ -22,7 +22,7 @@ Cas d'utilisation des `FORM PDF` :
 
 ## Création PDF
 
-Utilisation de la [TRANSACTION `SFP`]() pour accéder à Form Builder ou via la [TRANSACTION `SE80`]() (pour créer une interface puis le formulaire).
+Utilisation de la [TRANSACTION SFP](../22_Transactions/TCODE_SFP.md) pour accéder à Form Builder ou via la [TRANSACTION SE80](../22_Transactions/TCODE_SE80.md) (pour créer une interface puis le formulaire).
 
 Avant de créer un `PDF`, vous devez disposer d'une interface contenant tous les champs que vous utiliserez dans le formulaire.
 
@@ -40,7 +40,7 @@ Les étapes impliquées dans le développement de PDF sont :
 
     Interface de formulaire qui envoie les données de l'application au formulaire.
 
-    L'interface peut être atteinte via une [TRANSACTION `SE80`]() ou la [TRANSACTION `SFP`](). L'interface des [SMARTFORMS](../19_Smarform/README.md) et `PDF` ne sont pas compatible.
+    L'interface peut être atteinte via une [TRANSACTION SE80](../22_Transactions/TCODE_SE80.md) ou la [TRANSACTION SFP](../22_Transactions/TCODE_SFP.md). L'interface des [SMARTFORMS](../19_Smarform/README.md) et `PDF` ne sont pas compatible.
 
     Si vous cliquez sur la case à cocher - `Smart Form compatible interface` dans l'onglet `Propriétés`, le programme d'impression pour [SMARTFORMS](../19_Smarform/README.md) peut également être utilisé pour les `PDF`.
   

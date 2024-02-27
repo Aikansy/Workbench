@@ -20,7 +20,7 @@ Un `domaine` va définir les `caractéristiques techniques de base` d’un [CHAM
 
       Il existe beaucoup plus de choix mais ils restent peu utilisés.
 
-Afin de comprendre comment se définit un domaine, le domaine `MATNR` (numéro d’article) sera pris comme exemple. Pour cela, la [TRANSACTION `SE11`](01_SE11.md) doit être exécutée, puis dans l’écran initial de la gestion du _dictionnaire ABAP_, l’option `Domaine` doit être cochée, puis dans la zone texte, `MATNR` doit être renseigné.
+Afin de comprendre comment se définit un domaine, le domaine `MATNR` (numéro d’article) sera pris comme exemple. Pour cela, la [TRANSACTION SE11](../22_Transactions/TCODE_SE11.md) doit être exécutée, puis dans l’écran initial de la gestion du _dictionnaire ABAP_, l’option `Domaine` doit être cochée, puis dans la zone texte, `MATNR` doit être renseigné.
 
 ![](../ressources/08_02_01.png)
 
@@ -36,7 +36,7 @@ Afin de comprendre comment se définit un domaine, le domaine `MATNR` (numéro d
 
 - **Actif <-> Inactif** permet de naviguer entre la version active et la version inactive (utile pour voir les modifications en cours avant activation finale).
 
-- **Autre Objet** : pour sélectionner un autre domaine sans repasser par l’écran initial de la [TRANSACTION `SE11`]().
+- **Autre Objet** : pour sélectionner un autre domaine sans repasser par l’écran initial de la [TRANSACTION SE11](../22_Transactions/TCODE_SE11.md).
 
   `Domaine - Autre objet...` [Shift][F5]
 

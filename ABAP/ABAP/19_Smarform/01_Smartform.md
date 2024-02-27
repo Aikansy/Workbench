@@ -33,7 +33,7 @@ Nécessite de créer une feuille de style (Stylesheet) et de l'activer avant.
 
 1.  [INTERFACE_DE_FORMULAIRE] (Paramètres, fonctionne comme un module fonction)
 
-    Deux paramètres d'imports obligatoires nécessitent la création de structures et tables Header et Item créés au préalable en [SE11] :
+    Deux paramètres d'imports obligatoires nécessitent la création de structures et tables Header et Item créés au préalable en [SE11](../22_Transactions/TCODE_SE11.md) :
 
     IT_HEADER (import table non modifiable) dans le form
 

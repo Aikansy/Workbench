@@ -9,7 +9,7 @@
 
 ## PROCESS
 
-1. [TRANSACTION `SFP`]() : Créer une interface pour le formulaire Adobe
+1. [TRANSACTION SFP](../22_Transactions/TCODE_SFP.md) : Créer une interface pour le formulaire Adobe
 
     Interface :
         
@@ -50,7 +50,7 @@
 
     ![](../ressources/20_01_32.jpg)
 
-2. [TRANSACTION `SFP`]() : Créer le Layout
+2. [TRANSACTION SFP](../22_Transactions/TCODE_SFP.md) : Créer le Layout
 
     ![](../ressources/20_01_34.jpg)
 

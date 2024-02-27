@@ -19,7 +19,7 @@
   ENDIF.
   ```
 
-  L’instruction `MESSAGE` fait référence à la classe de `MESSAGE 00`, `numéro 001` ([transaction `SE91`]()). Ce message sera construit avec le texte `Le champ doit être renseigné`. La lettre `E` devant le numéro est la criticité du message :
+  L’instruction `MESSAGE` fait référence à la classe de `MESSAGE 00`, `numéro 001` ([TRANSACTION SE91](../../22_Transactions/TCODE_SE91.md)). Ce message sera construit avec le texte `Le champ doit être renseigné`. La lettre `E` devant le numéro est la criticité du message :
 
   - `E` pour erreur (le programme est alors bloqué jusqu’à résolution de l’erreur)
 

@@ -4,7 +4,7 @@ Un autre [OBJET](../14_Classes/01_ABAP_Object/01_ABAP_Object.md) faisant partie 
 
 ![](../ressources/08_13_01.png)
 
-Par exemple : dans la zone de commande, la [TRANSACTION `/oMM03`]() va être renseignée afin d’afficher le détail d’un article, dans une nouvelle session. L’écran est alors composé d’un seul [CHAMP](../15_Screen/02_Champs/README.md) nommé `Article`.
+Par exemple : dans la zone de commande, la [TRANSACTION MM03]() va être renseignée afin d’afficher le détail d’un article, dans une nouvelle session. L’écran est alors composé d’un seul [CHAMP](../15_Screen/02_Champs/README.md) nommé `Article`.
 
 ![](../ressources/08_13_02.png)
 
@@ -20,13 +20,13 @@ Il serait intéressant de voir comment naviguer jusqu’aux objets qui nous int�
 
 Une fenêtre apparaît avec différentes informations. C’est cette description qui est définie dans l’`élément de données Documentation complémentaire` (cf. section sur Éléments de données de ce chapitre). Dans la barre d’outils se trouve une icône avec un marteau et une clé images/05RI27.png, permettant d’obtenir les informations techniques du [CHAMP](../15_Screen/02_Champs/README.md).
 
-Voici pour celui de l’article de la [TRANSACTION `MM03`]() :
+Voici pour celui de l’article de la [TRANSACTION MM03]() :
 
 ![](../ressources/08_13_05.png)
 
 C’est une configuration typique des informations techniques divisée en quatre parties :
 
-1. `Données dynpro` : renseigne sur le nom du programme principal et du numéro d’écran. Un programme peut posséder plusieurs écrans et il est donc nécessaire de les différencier pour ne pas mélanger les traitements. Par exemple, la [TRANSACTION `XK01`]() et la [TRANSACTION `XK02`]() permettant de créer et modifier un fournisseur. Ces deux [TRANSACTIONS]() utilisent le même programme principal (`SAPMF02K`) mais avec deux écrans différents (`n° 100` pour l’un et `101` pour l’autre). Ainsi le traitement pour la création d’un `fournisseur` sera bien distinct de celui de la `modification`.
+1. `Données dynpro` : renseigne sur le nom du programme principal et du numéro d’écran. Un programme peut posséder plusieurs écrans et il est donc nécessaire de les différencier pour ne pas mélanger les traitements. Par exemple, la [TRANSACTION XK01]() et la [TRANSACTION XK02]() permettant de créer et modifier un fournisseur. Ces deux [TRANSACTIONS](../03_Programmation/03_Transactions.md) utilisent le même programme principal (`SAPMF02K`) mais avec deux écrans différents (`n° 100` pour l’un et `101` pour l’autre). Ainsi le traitement pour la création d’un `fournisseur` sera bien distinct de celui de la `modification`.
 
 2. `Données GUI` : tout d’abord, le **SAP GUI** (de l’anglais `Graphic User Interface` pour interface graphique utilisateur) est la couche graphique de **SAP**. C’est elle qui définit tout l’agencement visuel de **SAP** (barre de commande, barres d’outils, écrans, sous-écrans...). Dans les informations techniques, elle représente le nom de la barre d’outils liée à l’écran. Ici il s’agit du statut `MENU du programme SAPLMGMM`.
 
@@ -44,6 +44,6 @@ C’est une configuration typique des informations techniques divisée en quatre
 
    - `ID de paramètre` est l’identifiant défini dans l’élément de données afin de renseigner une mémoire système.
 
-4. `Désignation de zone pour batch input` est une indication rassemblant `nom_de_table + zone_de_table` utilisée lors d’un [BATCH INPUT]() : pouvant être traduit par `données en masse`, il s’agit d’une simulation de [TRANSACTION]() afin de remplir tous les [CHAMPS](../15_Screen/02_Champs/README.md) d’un écran et dont le but est de reproduire cette simulation dans un programme, mais avec une masse de données beaucoup plus importante. Il était souvent employé lors de mises à jour des données de références (`master data`).
+4. `Désignation de zone pour batch input` est une indication rassemblant `nom_de_table + zone_de_table` utilisée lors d’un [BATCH INPUT]() : pouvant être traduit par `données en masse`, il s’agit d’une simulation de [TRANSACTION](../03_Programmation/03_Transactions.md) afin de remplir tous les [CHAMPS](../15_Screen/02_Champs/README.md) d’un écran et dont le but est de reproduire cette simulation dans un programme, mais avec une masse de données beaucoup plus importante. Il était souvent employé lors de mises à jour des données de références (`master data`).
 
 Aujourd’hui, il est préférable de recourir à des [BAPIS]() ou des [METHODES](../14_Classes/03_Méthodes/01_Méthodes.md), car avec un [BATCH INPUT](), un simple message d’avertissement sur un système de connexion remettait en cause le programme et les chargements de données.

@@ -2,7 +2,7 @@
 
 Dans cette mise en pratique, un `Module fonction` sera créé pas à pas. Il s'agira d'une `fonction RFC` qui créera un nouveau conducteur dans la table de base de données `ZDRIVER_CAR`.
 
-1. Tout d'abord, il faut créer le groupe de fonctions. Pour ce faire, exécutez la [TRANSACTION `SE37`]().
+1. Tout d'abord, il faut créer le groupe de fonctions. Pour ce faire, exécutez la [TRANSACTION SE37](../22_Transactions/TCODE_SE37.md).
 
 2. Dans le menu, choisissez l'option suivante :
 

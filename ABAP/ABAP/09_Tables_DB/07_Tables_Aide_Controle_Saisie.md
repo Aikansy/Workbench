@@ -24,7 +24,7 @@ Il est à son tour composé d’une barre d’outils mais sans grande nouveauté
 
 - `Contrôle souhaité` (par défaut cette option est cochée) permettant ainsi que ce champ soit vérifié dans les [DYNPROS]() (écran spécifique à un programme).
 
-- `Message d’erreur` - **SAP** en utilise un par défaut mais il est aussi possible d’en attribuer un autre. Il est composé d’un numéro (`N°msg`) et d’une classe de message (`DFct`) et est géré via la [TRANSACTION `SE91`]().
+- `Message d’erreur` - **SAP** en utilise un par défaut mais il est aussi possible d’en attribuer un autre. Il est composé d’un numéro (`N°msg`) et d’une classe de message (`DFct`) et est géré via la [TRANSACTION SE91](../22_Transactions/TCODE_SE91.md).
 
 - `Types de zones de clé externe` est une information sur sa caractéristique. Elle peut être :
 
@@ -36,7 +36,7 @@ Il est à son tour composé d’une barre d’outils mais sans grande nouveauté
 
 Pour ces deux dernières options, un exemple serait de prendre la [TABLE](./01_Tables.md) `BKPF` (En-tête des documents comptables). Tous les champs clés ont une `clé externe` définie comme `candidats/zones clés`, et les autres en ont une définie comme `aucun candidat/zone clé`.
 
-- `zones clé d’une table texte.` Certaines [TABLES](./01_Tables.md) ont des tables textes associées, comme par exemple `MARA` associée à `MAKT`. Pour y accéder, il est possible d’utiliser la [TRANSACTION `SE11`]() (Table base de données puis `MAKT`) ou de passer par l’écran de gestion du dictionnaire `ABAP` de `MARA`, en utilisant le menu Saut - Table des textes.
+- `zones clé d’une table texte.` Certaines [TABLES](./01_Tables.md) ont des tables textes associées, comme par exemple `MARA` associée à `MAKT`. Pour y accéder, il est possible d’utiliser la [TRANSACTION SE11](../22_Transactions/TCODE_SE11.md) (Table base de données puis `MAKT`) ou de passer par l’écran de gestion du dictionnaire `ABAP` de `MARA`, en utilisant le menu Saut - Table des textes.
 
   ![](../ressources/09_07_04.png)
 

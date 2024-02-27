@@ -204,7 +204,7 @@ Grâce à elle, il est possible de :
 
   **Menu - Afficher menu d’un rôle** [Shift][F5]
 
-- Ajouter une [transaction](03_Transactions.md) comme favori, la supprimer ou la modifier.
+- Ajouter une [TRANSACTION](03_Transactions.md) comme favori, la supprimer ou la modifier.
 
   **Favoris - Créer** [Ctrl][Shift][F6]
 

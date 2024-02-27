@@ -112,7 +112,7 @@ Il serait intéressant de faire un petit aparté concernant la catégorisation p
 
 Pour que le paramètre `T_TRAVEL` soit considéré comme une table, il est nécessaire d'utiliser un type de table. Un type de table est une sorte de structure qui va définir la ligne servant de modèle. Par exemple, si on souhaite utiliser la table `ZTRAVEL` dans la `fonction`, il faudra créer le type de table correspondant comme suit :
 
-1. Dans la [TRANSACTION `SE11`](), insérez le nom du type de table à créer (`ZTT_TRAVEL` par exemple), puis cliquez sur `Créer` :
+1. Dans la [TRANSACTION SE11](../22_Transactions/TCODE_SE11.md), insérez le nom du type de table à créer (`ZTT_TRAVEL` par exemple), puis cliquez sur `Créer` :
 
    ![](../ressources/13_02_06.png)
 
@@ -144,7 +144,7 @@ Aussi, dans la partie `Source`, il est intéressant de constater que la `fonctio
 
 ![](../ressources/13_02_12.png)
 
-Cette `fonction` contenant un nombre très important de paramètres, il est assez difficile de l'utiliser dans un programme. C'est pour cela que l'option `Modèle` dans l'`éditeur ABAP` estr une aide considérable. En effet, après avoir exécuté la [TRANSACTION `SE38`]() et avoir créé un nouveau programme (ou ouvert, pour modification, un programme existant), il suffira alors de cliquer sur cette option de la barre d'outils, afin de renseigner la `fonction` souhaitée dans la partie `CALL FUNCTION` :
+Cette `fonction` contenant un nombre très important de paramètres, il est assez difficile de l'utiliser dans un programme. C'est pour cela que l'option `Modèle` dans l'`éditeur ABAP` estr une aide considérable. En effet, après avoir exécuté la [TRANSACTION SE38](../22_Transactions/TCODE_SE38.md) et avoir créé un nouveau programme (ou ouvert, pour modification, un programme existant), il suffira alors de cliquer sur cette option de la barre d'outils, afin de renseigner la `fonction` souhaitée dans la partie `CALL FUNCTION` :
 
 ![](../ressources/13_02_13.png)
 

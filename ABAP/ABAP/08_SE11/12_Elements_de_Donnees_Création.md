@@ -2,7 +2,7 @@
 
 Dans cette section, l’[ELEMENTS DE DONNEES](./07_Elements_de_Donnees.md) `ZDRIVER_ID` sera créé et utilisera le [DOMAINE](./02_Domaines.md) du même nom :
 
-1. Exécuter la [TRANSACTION `SE11`](./01_SE11.md).
+1. Exécuter la [TRANSACTION SE11](../22_Transactions/TCODE_SE11.md).
 
 2. Dans l’écran de gestion du [DICTIONNAIRE ABAP](./01_SE11.md), cocher l’option `Type de données`.
 

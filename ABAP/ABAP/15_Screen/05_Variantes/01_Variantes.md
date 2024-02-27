@@ -36,7 +36,7 @@ Il est possible d’y voir plusieurs options :
 
 - Des options générales à la _variante_ sont proposées :
 
-  - `Uniquement` pour traitement en arrière-plan : obligera le programme à ne pouvoir être exécuté qu’en arrière-plan et le résultat de l’exécution ne sera visible que dans le log du job associé ([TRANSACTION `SM37`]()).
+  - `Uniquement` pour traitement en arrière-plan : obligera le programme à ne pouvoir être exécuté qu’en arrière-plan et le résultat de l’exécution ne sera visible que dans le log du job associé ([TRANSACTION SM37](../../22_Transactions/TCODE_SM37.md)).
 
   - `Protéger variante` : permet à la _variante_ de pouvoir être modifiée seulement par la personne qui l’a créée ou la dernière l’ayant modifié. Aussi, si un autre _utilisateur_ décide de l’utiliser et qu’il veut en changer certains _paramètres_, cela lui sera refusé.
 
@@ -84,11 +84,11 @@ Il est possible d’y voir plusieurs options :
 
 - `Enregistrer zone sans valeurs` signifie que lors de l’importation de la _variante_, si une zone a déjà été renseignée, elle ne sera pas écrasée par les valeurs de la _variante_. Un exemple concret sera proposé à la suite de la partie sur les options de _variantes_.
 
-- `Désactiver GPA` est utilisée dans le cas où une zone de l’[ECRAN DE SELECTION](../01_Ecran_de_Sélection/README.md) utilise une mémoire système pour importer automatiquement des valeurs (`GET MEMORY ID/SET MEMORY ID`) comme mentionné dans le chapitre [Dictionnaire de données (DDIC) - Éléments de données](../../08_SE11/07_Elements_de_Donnees.md). Cette option permet d’annuler cet import automatique.
+- `Désactiver GPA` est utilisée dans le cas où une zone de l’[ECRAN DE SELECTION](../01_Ecran_de_Sélection/README.md) utilise une mémoire système pour importer automatiquement des valeurs (`GET MEMORY ID/SET MEMORY ID`) comme mentionné dans le chapitre [DDIC - ELEMENTS DE DONNEES](../../08_SE11/07_Elements_de_Donnees.md). Cette option permet d’annuler cet import automatique.
 
 - `Zone saisie obligatoire` définit la zone de l’[ECRAN DE SELECTION](../01_Ecran_de_Sélection/README.md) comme requis.
 
-- `Variable sélection`, `Option` et `Nom des variables` sont trois _paramètres_ permettant d’importer les valeurs d’une zone de l’[ECRAN DE SELECTION](../01_Ecran_de_Sélection/README.md) via une [table standard](../../09_Tables_DB/README.md) (comme la [TVARV]()) ou via un calcul dynamique (pour les champs de type `Date` et `Heure`).
+- `Variable sélection`, `Option` et `Nom des variables` sont trois _paramètres_ permettant d’importer les valeurs d’une zone de l’[ECRAN DE SELECTION](../01_Ecran_de_Sélection/README.md) via une [TABLE STANDARD](../../09_Tables_DB/README.md) (comme la [TVARV]()) ou via un calcul dynamique (pour les champs de type `Date` et `Heure`).
 
   ![](../../ressources/15_05_01_15.png)
 
@@ -100,7 +100,7 @@ En cliquant dessus, la liste des _variantes_ apparaîtra pour sélection sauf ce
 
 _Manipulation pour rechercher une variante dans le catalogue :_
 
-- Il suffit de se rendre dans l’_éditeur ABAP_ ([TRANSACTION `SE38`]()).
+- Il suffit de se rendre dans l’_éditeur ABAP_ ([TRANSACTION SE38](../../22_Transactions/TCODE_SE38.md)).
 
 - Renseigner le nom du programme et choisir l’option _Variantes_, puis cliquer sur `Afficher`.
 

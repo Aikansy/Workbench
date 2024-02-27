@@ -2,7 +2,7 @@
 
 La suite de cette section va lister toutes les étapes nécessaires à la création d’une aide à la recherche élémentaire de la [TABLE](../09_Tables_DB/01_Tables.md) `MARA` :
 
-1. Exécuter la [TRANSACTION `SE11`](./01_SE11.md).
+1. Exécuter la [TRANSACTION SE11](../22_Transactions/TCODE_SE11.md).
 
 2. Dans l’écran de gestion du dictionnaire `ABAP`, cocher l’option `Aide recherche`.
 

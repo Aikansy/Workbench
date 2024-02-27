@@ -6,7 +6,7 @@ Pour la suite, trois autres [TABLES](./01_Tables.md) sont créées pour former a
 
 Deux [ELEMENTS DE DONNEES](../08_SE11/07_Elements_de_Donnees.md) seront créés en suivant les étapes ci-dessous :
 
-- Exécuter la [TRANSACTION `SE11`]()
+- Exécuter la [TRANSACTION SE11](../22_Transactions/TCODE_SE11.md)
 
 - Dans l'écran initial du gestionnaire du [DDIC](../08_SE11/01_SE11.md), cocher l'option `Type de données` et renseigner la zone avec le nom de l'élément de données.
 
@@ -38,7 +38,7 @@ Comme indiqué, trois nouvelles tables sont à créer. Pour rappel, les étapes 
 
 Un seul [ELEMENT DE DONNEES](../08_SE11/07_Elements_de_Donnees.md) sera créé en suivant les étapes suivantes :
 
-- Exécuter la [TRANSACTION `SE11`]()
+- Exécuter la [TRANSACTION SE11](../22_Transactions/TCODE_SE11.md)
 
 - Dans l'écran initial du gestionnaire du [DDIC](../08_SE11/01_SE11.md), cocher l'option `Table base de données` et renseigner la zone avec le nom de la [TABLE](./01_Tables.md).
 
@@ -91,7 +91,7 @@ Maintenant que la [TABLE](./01_Tables.md) des véhicules a été créée, il ser
 
 - Activer
 
-- Cette table ayant une gestion via la [TRANSACTION `SM30`](), il faudra l'actualiser avec les nouvelles informations. Pour ceci, aller dans le menu `Utilitaires - Générateur de gestion de table`.
+- Cette table ayant une gestion via la [TRANSACTION SM30](../22_Transactions/TCODE_SM30.md), il faudra l'actualiser avec les nouvelles informations. Pour ceci, aller dans le menu `Utilitaires - Générateur de gestion de table`.
 
 - Cliquer sur `Modifier` (bouton avec l'icône du crayon dans la barre d'outils).
 

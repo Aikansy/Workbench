@@ -12,7 +12,7 @@ Ce type de `User-Exit` est généralement utilisé pour ajouter une logique de t
 
 Le `User-Exit` de type `Perform` est appelé à partir du programme standard **SAP** à un moment donné de l'exécution, en général lorsque certaines conditions sont remplies. Le code exécuté par le `User-Exit` peut être développé par le client lui-même ou par un prestataire de services tiers.
 
-Les `User-Exit` de type `Perform` sont souvent utilisés dans les modules **SAP** tels que les ventes et la distribution, la gestion des stocks ou la gestion de production. Ils sont généralement configurés à l'aide de la [TRANSACTION `SMOD`]() ou la [TRANSACTION `CMOD`]() dans **SAP**.
+Les `User-Exit` de type `Perform` sont souvent utilisés dans les modules **SAP** tels que les ventes et la distribution, la gestion des stocks ou la gestion de production. Ils sont généralement configurés à l'aide de la [TRANSACTION SMOD]() ou la [TRANSACTION CMOD]() dans **SAP**.
 
 ### **TYPE FONCTION OU EXIT DE FONCTION**
 
@@ -44,7 +44,7 @@ Ce type de `User-Exit` est souvent utilisé pour personnaliser les `Menus` **SAP
 
 Le `User-Exit` de type `Menu` est appelé à partir d'un programme standard **SAP** lorsqu'un _utilisateur_ sélectionne une option de `Menu` personnalisée. Le code exécuté par le `User-Exit` permet de fournir des fonctionnalités supplémentaires à l'_utilisateur_, qui ne sont pas disponibles dans le `Menu` standard **SAP**.
 
-Les `User-Exit` de type `Menu` sont souvent utilisés dans les modules **SAP** tels que la finance, la logistique ou la production. Ils sont généralement configurés à l'aide de la [TRANSACTION `SMOD`]() ou la [TRANSACTION `CMOD`]() dans **SAP**.
+Les `User-Exit` de type `Menu` sont souvent utilisés dans les modules **SAP** tels que la finance, la logistique ou la production. Ils sont généralement configurés à l'aide de la [TRANSACTION SMOD]() ou la [TRANSACTION CMOD]() dans **SAP**.
 
 Il est important de noter que l'utilisation des `User-Exit` de type `Menu` peut avoir des implications en termes de maintenance et de mise à jour du système, car toute modification apportée à un `Menu` **SAP** doit être soigneusement testée avant d'être mise en production. De plus, les changements apportés à un `Menu` **SAP** peuvent affecter d'autres modules **SAP** qui utilisent ce `Menu`, il est donc important de prendre en compte ces interdépendances lors de la personnalisation des `Menus` **SAP**.
 
@@ -56,7 +56,7 @@ Ce type de `User-Exit` est souvent utilisé pour personnaliser l'interface _util
 
 Le `User-Exit` de type `écran` est appelé à partir d'un programme standard **SAP** lorsqu'un _utilisateur_ accède à une transaction personnalisée ou à une transaction standard **SAP**. Le code exécuté par le `User-Exit` permet de fournir des fonctionnalités supplémentaires à l'_utilisateur_, qui ne sont pas disponibles dans l'interface _utilisateur_ standard **SAP**.
 
-Les `User-Exit` de type `écran` sont souvent utilisés dans les modules **SAP** tels que la finance, la logistique ou la production. Ils sont généralement configurés à l'aide de la [TRANSACTION `SMOD`]() ou la [TRANSACTION `CMOD`]() dans **SAP**.
+Les `User-Exit` de type `écran` sont souvent utilisés dans les modules **SAP** tels que la finance, la logistique ou la production. Ils sont généralement configurés à l'aide de la [TRANSACTION SMOD]() ou la [TRANSACTION CMOD]() dans **SAP**.
 
 Il est important de noter que l'utilisation des `User-Exit` de type `écran` peut avoir des implications en termes de maintenance et de mise à jour du système, car toute modification apportée à l'interface _utilisateur_ **SAP** doit être soigneusement testée avant d'être mise en production. De plus, les changements apportés à l'interface _utilisateur_ **SAP** peuvent affecter d'autres modules **SAP** qui utilisent cette interface, il est donc important de prendre en compte ces interdépendances lors de la personnalisation de l'interface _utilisateur_ **SAP**.
 
@@ -93,7 +93,7 @@ Google : `BAdI` + nom transaction
 > CONSIGNES:
 > Si la valeur du champs du Numéro de Société n'est pas présent dans la TVARVC (zcom_achat), afficher un message.
 
-[SE18]
+[SE18](../22_Transactions/TCODE_SE18.md)
 
 [NOM_BADI]: ME_PROCESS_PO_CUST
 

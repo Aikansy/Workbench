@@ -4,7 +4,7 @@ Au lieu de voir comment créer une [STRUCTURE](./11_Structures.md), il serait mi
 
 Pour cela, la [TABLE](./01_Tables.md) `ZCAR_BRAND_MOD`, créée à la section [DDIC](./10_Tables_DDIC.md), sera utilisée. Un [APPEND](./03_Tables_Append.md) de structure lui sera associé et contiendra deux champs supplémentaires : un sur la puissance du moteur et un autre sur l’unité de mesure de la puissance.
 
-- Exécuter la [TRANSACTION `SE11`]().
+- Exécuter la [TRANSACTION SE11](../22_Transactions/TCODE_SE11.md).
 
 - Cocher l’option [TABLE](./01_Tables.md) base de données, renseigner `ZCAR_BRAND_MOD` et cliquer sur le bouton `Afficher ou Modifier` (le choix n’a pas d’importance dans ce cas).
 

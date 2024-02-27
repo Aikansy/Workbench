@@ -14,7 +14,7 @@ _Exemple_
 
 Connaître la liste de tous les programmes commençant par `DEMO*` :
 
-- Exécutez la [TRANSACTION `SE38`]() (dans le cas d’une recherche d’un nom de programme).
+- Exécutez la [TRANSACTION SE38](../../22_Transactions/TCODE_SE38.md) (dans le cas d’une recherche d’un nom de programme).
 
 - Dans la zone Programme, renseignez `DEMO*` signifiant qu’on recherche tous les noms de programmes commençant par `DEMO*` suivi d’une chaîne de caractères (symbolisée par `*`)
 

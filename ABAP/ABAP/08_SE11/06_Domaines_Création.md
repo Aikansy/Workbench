@@ -2,7 +2,7 @@
 
 Il serait intéressant de voir maintenant comment créer un [DOMAINE](./02_Domaines.md) de type alphanumérique. Pour cela, il faut suivre les étapes suivantes :
 
-1. Exécuter la [TRANSACTION `SE11`](./01_SE11.md).
+1. Exécuter la [TRANSACTION SE11](../22_Transactions/TCODE_SE11.md).
 
 2. Dans l’écran de gestion du [DDIC](./01_SE11.md), cocher l’option `Domaine`.
 

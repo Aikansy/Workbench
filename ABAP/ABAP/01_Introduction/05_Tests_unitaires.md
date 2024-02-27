@@ -10,7 +10,7 @@ Une fois le [DEVELOPPEMENT](04_Développement.md) terminé, il doit être testé
 
   ![](../ressources/01_05_01.png)
 
-      Dans la majorité des cas, les descriptions des [DUMPS](../07_Dump/01_Dump.md) sont en anglais ou en allemand.
+      Dans la majorité des cas, les descriptions des Dumps sont en anglais ou en allemand.
 
   Il suffira alors de corriger le problème.
 

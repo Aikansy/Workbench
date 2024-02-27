@@ -1,6 +1,6 @@
 # **ORDRES DE TRANSPORT**
 
-Le programme ayant été activé et testé, il serait intéressant de voir l’_ordre de transport_ associé. Pour ce faire, la [TRANSACTION `SE01`](03_Transactions.md) est exécutée.
+Le programme ayant été activé et testé, il serait intéressant de voir l’_ordre de transport_ associé. Pour ce faire, la [TRANSACTION SE01](03_Transactions.md) est exécutée.
 
 ![](../ressources/03_05_01.png)
 
@@ -83,7 +83,7 @@ Cette nouvelle fenêtre présente une barre d’outils avec les fonctionnalités
 
   `Ordre/Tâche - Modifier titulaire...` [F5]
 
-- **Libérer** avant de pouvoir transporter un ordre, il faut d’abord _libérer_ sa tâche puis l’**OT** lui-même. Une fois cette étape terminée, l’_équipe Basis_ peut effectuer le transport sur les autres systèmes via la [TRANSACTION `STMS`]() (impossible sinon) .
+- **Libérer** avant de pouvoir transporter un ordre, il faut d’abord _libérer_ sa tâche puis l’**OT** lui-même. Une fois cette étape terminée, l’_équipe Basis_ peut effectuer le transport sur les autres systèmes via la [TRANSACTION STMS](../22_Transactions/TCODE_STMS.md) (impossible sinon) .
 
   `Ordre/Tâche - Libérer` [Shift][F8]
 
@@ -131,7 +131,7 @@ Dans la partie principale de l’écran, on retrouve un onglet avec les proprié
 
 - **Langue** qui doit être utilisée pour l’objet (rarement renseignée).
 
-- L’**Activité IMG** : concerne la configuration de **SAP** et donc des ordres de [CUSTOMIZING]() avec une référence de l’activité exécutée dans la [TRANSACTION `SPRO`]().
+- L’**Activité IMG** : concerne la configuration de **SAP** et donc des ordres de [CUSTOMIZING]() avec une référence de l’activité exécutée dans la [TRANSACTION SPRO](../22_Transactions/TCODE_SPRO.md).
 
       Le bouton Modifier donne la possibilité d’ajouter manuellement des objets à la liste, ce qui n’est pas vraiment recommandé ou sinon le faire avec beaucoup de précaution.
 

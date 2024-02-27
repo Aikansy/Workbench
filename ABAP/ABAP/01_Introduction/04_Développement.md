@@ -6,4 +6,4 @@ Il est très important d'organiser le _programme_ comme relevé dans la partie d
 
 De plus, lors de cette phase, il sera nécessaire d'optimiser au maximum le code afin de le rendre lisible (ajout de _commentaires_ pour une maintenance future), et rapide pour une meilleure utilisation finale.
 
-L'organisation d'un _programme ABAP_ sera en vue en détail lors du chapitre [Organisation](../17_Organisation/README.md).
+L'organisation d'un _programme ABAP_ sera en vue en détail lors du chapitre [ORGANISATION](../17_Organisation/README.md).

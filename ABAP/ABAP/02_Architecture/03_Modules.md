@@ -8,7 +8,7 @@ Des _modules_ dits techniques existent également comme _BASIS_ et bien évidemm
 
 La suite de ce chapitre donnera un aperçu des _modules_ principaux. Bien entendu, il en existe beaucoup, mais ceux qui seront évoqués sont les plus communs.
 
-### Finance
+### FINANCE
 
 Comme son nom l'indique, elle regroupe toutes les fonctionnalités liées aux _capitaux_ (entrants et sortants)... et est principalement composée des _modules_ suivants :
 
@@ -28,7 +28,7 @@ Comme son nom l'indique, elle regroupe toutes les fonctionnalités liées aux _c
 
   pour mesurer et gérer les investissements financiers de l'entreprise.
 
-### Logistique
+### LOGISTIQUE
 
 Rassemble tous les services liés à l'organisation d'une entreprise (transports, ventes, stocks) dont l'essentiel des _modules_ dont :
 
@@ -52,13 +52,13 @@ Rassemble tous les services liés à l'organisation d'une entreprise (transports
 
   Plannification, traitement, exécution des tâches.
 
-### Ressources Humaines
+### RH
 
 Enfin la partie **Ressources Humaines** est en vérité un _module_ à lui tout seul, permettant de traiter et gérer les informations liées au domaine RH : données de base du personnel, gestion des salaires, temps de travail, frais de déplacement, etc. Mais aussi gestion des compétences, des séminaires, du recrutement...
 
     Tous ces modules sont indépendants : ils ont leurs propres programmes, TABLES, FONCTIONS... et agissent comme des fonctionnalités que l'entrepruse peut ou non installer.
 
-### Techniques
+### TECHNIQUES
 
 Pour finir, on trouve les _modules_ techniques :
 

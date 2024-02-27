@@ -28,15 +28,15 @@ s
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | `SE38` | Editeur ABAP |
 | `SE80` | Editeur ABAP |
-| `SE11` | [DDIC](../08_SE11/01_SE11.md) - utilisé pour tout ce qui est création et gestion des [DBTAB](../09_Tables_DB/01_Tables.md), structures... |
-| `SE37` | Editeur de [FONCTIONS](../13_Fonctions/01_Type.md) |
-| `SE24` | Editeur de [CLASSES](../14_Classes/README.md) |
+| `SE11` | [DDIC](../22_Transactions/TCODE_SE11.md) - utilisé pour tout ce qui est création et gestion des [DBTAB](../09_Tables_DB/01_Tables.md), structures... |
+| `SE37` | Editeur de [FONCTIONS](../22_Transactions/TCODE_SE37.md) |
+| `SE24` | Editeur de [CLASSES](../22_Transactions/TCODE_SE24.md) |
 | `SMARTFORMS` | Editeur de [SMARTFORMS]() |
 | `SE41` | Editeur de Menu (barre d'outils) |
 | `SE51` | Editeur d'Ecran |
-| `SE91` | Gestion des [MESSAGES]() |
-| `ST22` | [DUMP](../07_Dump/01_Dump.md) listing |
-| `SE01` | [ORDRES DE TRANSPORT](05_Ordres_de_Transport.md) listing |
+| `SE91` | Gestion des [MESSAGES](../22_Transactions/TCODE_SE91.md) |
+| `ST22` | [DUMP](../22_Transactions/TCODE_ST22.md) listing |
+| `SE01` | [ORDRES DE TRANSPORT](../22_Transactions/TCODE_STMS.md) listing |
 
 Enfin, quelques _transactions Basis_ sont également à connaître pour débloquer certaines situations :
 
@@ -45,9 +45,9 @@ Enfin, quelques _transactions Basis_ sont également à connaître pour débloqu
 | `SM04`     | User Listing                                                                           |
 | `SM12`     | List of blocked entries                                                                |
 | `STATS`    | Enregistre et analyse tous les processus lancés, et en cours pour un utilisateur donné |
-| `SM37`     | [JOBS]() listing                                                                       |
+| `SM37`     | [JOBS](../22_Transactions/TCODE_SE37.md) listing                                                                       |
 | `ST05`     | Trace toutes opérations de base de données lors d'une exécution de programme           |
-| `STMS`     | Gestion des [ORDRES DE TRANSPORT](05_Ordres_de_Transport.md)                           |
+| `STMS`     | Gestion des [ORDRES DE TRANSPORT](../22_Transactions/TCODE_STMS.md)                           |
 
     Petit rappel : comme vu au chapitre 02_Architecture - Les modules, l’équipe Basis s’occupe de tout ce qui est installation des serveurs, performances système, base de données...
 

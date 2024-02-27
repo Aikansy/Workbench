@@ -4,7 +4,7 @@ Cette partie développera la partie concernant les _tables_ et les [STRUCTURES](
 
 Cependant, comme la configuration d’une `table de données` est un peu plus complexe, il serait intéressant d’étudier son comportement et toutes ses options possibles.
 
-Pour cela, la _table_ `MARA` vue dans les sections précédentes sera analysée. Il suffit d’exécuter la [TRANSACTION `SE11`](../08_SE11/01_SE11.md), puis dans la fenêtre d’accueil du gestionnaire du [DICTIONNAIRE ABAP](../08_SE11/README.md), de sélectionner l’option `Table base de données` et de renseigner la zone adjacente.
+Pour cela, la _table_ `MARA` vue dans les sections précédentes sera analysée. Il suffit d’exécuter la [TRANSACTION SE11](../22_Transactions/TCODE_SE11.md), puis dans la fenêtre d’accueil du gestionnaire du [DICTIONNAIRE ABAP](../08_SE11/README.md), de sélectionner l’option `Table base de données` et de renseigner la zone adjacente.
 
 L’affichage de la _table_ `MARA` se présentera alors sous cette forme :
 
@@ -58,7 +58,7 @@ Il existe également des types de données système mais qui, comme pour ceux du
 
   - `Mise en mémoire tampon non autorisée` et donc ne s’activera pas pour la _table_.
 
-  - `Mise en mémoire autorisée mais désactivée`, bufferisation d’une _table_ possible, mais non active actuellement (si après analyse, il était avantageux d’activer cette mise en mémoire tampon, alors l’_équipe Basis_ peut le faire via la [TRANSACTION `ST02`]()).
+  - `Mise en mémoire autorisée mais désactivée`, bufferisation d’une _table_ possible, mais non active actuellement (si après analyse, il était avantageux d’activer cette mise en mémoire tampon, alors l’_équipe Basis_ peut le faire via la [TRANSACTION ST02](../22_Transactions/TCODE_ST02.md)).
 
   - `Mise en mémoire tampon autorisée`, il est alors obligatoire dans ce cas, d’indiquer le Type de mise en mémoire tampon, à savoir :
 
@@ -68,7 +68,7 @@ Il existe également des types de données système mais qui, comme pour ceux du
 
     - `Mise en mémoire tampon complète` : toutes les données de la _table_ sont stockées dans la mémoire tampon.
 
-- `Journalisation modifications de données` permet d’enregistrer toute mise à jour des donnés de la _table_ dans un journal ou un `LOG`. Les données de ce journal sont stockées dans la _table_ `DBTABLOG` ou peuvent être consultées et analysées via la [TRANSACTION `SCU3`]().
+- `Journalisation modifications de données` permet d’enregistrer toute mise à jour des donnés de la _table_ dans un journal ou un `LOG`. Les données de ce journal sont stockées dans la _table_ `DBTABLOG` ou peuvent être consultées et analysées via la [TRANSACTION SCU3](../22_Transactions/TCODE_SCU3.md).
 
 - `Accès en écriture avec Java` autorise la modification du contenu de la _table_ uniquement avec le langage de programmation `Java`. Avec les _tables_ de données [HANA](), un deuxième onglet est désormais disponible. Propriétés de BD spécifiques va définir le type de stockage à adopter à savoir un stockage en colonnes (Stk or. Col. - spécifique à [HANA]()) ou en lignes (St.or.li.).
 

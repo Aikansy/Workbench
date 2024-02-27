@@ -1,6 +1,6 @@
 # **WHERE COL (NOT) IN**
 
-> A distinguer de [Where Sous-requête (not) in sous-requête](<./31_Where_Sous_Requete_(not)_in_Sous_Requete.md>)
+> A distinguer de [WHERE SOUS-REQUETE (NOT) IN SOUS-REQUETE](<./31_Where_Sous_Requete_(not)_in_Sous_Requete.md>)
 
 ```JS
 col [NOT] IN (obj1, obj2,. . . )

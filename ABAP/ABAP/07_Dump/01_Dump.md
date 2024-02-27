@@ -100,7 +100,7 @@ Tout en haut de l’écran se trouvent trois boutons.
 
   `exécution - Affichage non mis en forme` [F9]
 
-Les _dumps_ peuvent être consultés via la [TRANSACTION `ST22`]().
+Les _dumps_ peuvent être consultés via la [TRANSACTION ST22](../22_Transactions/TCODE_ST22.md).
 
 Le programme ayant été développé, s’il retourne un _dump_, il doit être rapidement corrigé. Pour cela, la condition [IF](../05_Conditions/02_If_Endif.md) sera utilisée afin de vérifier que la [VARIABLE](../04_Variables/01_Variables.md) `V_B` est strictement supérieure à `0`.
 
