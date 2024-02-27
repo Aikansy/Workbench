@@ -16,21 +16,21 @@ Ce document a pour but de détailler l’aspect fonctionnel et technique du prog
 
 1. `Diagnostic`.
  
-2. Création d'un `ordre de réparation sur coûts prévisionnels` (temps d'intervention et pièces) dans la [Transaction IW32]().
+2. Création d'un `ordre de réparation sur coûts prévisionnels` (temps d'intervention et pièces) dans la [IW32](../../ABAP/22_Transactions/TCODE_IW32.md).
  
-3. Création d'un `devis` dans la [Transaction DP80]() en lien à l'`ordre de réparation sur coûts prévisionnels`.
+3. Création d'un `devis` dans la [DP80](../../ABAP/22_Transactions/TCODE_DP80.md) en lien à l'`ordre de réparation sur coûts prévisionnels`.
  
-4. Acceptation du `devis` dans la [Transaction IW32]().
+4. Acceptation du `devis` dans la [IW32](../../ABAP/22_Transactions/TCODE_IW32.md).
  
-5. Génération automatique d'une `commande de vente sur charges prévisionnelles` dans la [Transaction IW32]().
+5. Génération automatique d'une `commande de vente sur charges prévisionnelles` dans la [IW32](../../ABAP/22_Transactions/TCODE_IW32.md).
  
-6. Intervention et confirmation du temps et pièces réellement utilisées dans la [Transaction IW42]().
+6. Intervention et confirmation du temps et pièces réellement utilisées dans la [IW42](../../ABAP/22_Transactions/TCODE_IW42.md).
  
-7. Création d'une `demande de facturation sur charges réelles` (commande de vente) dans la [Transaction DP90]().
+7. Création d'une `demande de facturation sur charges réelles` (commande de vente) dans la [DP90](../../ABAP/22_Transactions/TCODE_DP902.md).
 
-8. Génération automatiquement d'une `commande de vente sur charges réelles` dans la [Transaction IW32]().
+8. Génération automatiquement d'une `commande de vente sur charges réelles` dans la [IW32](../../ABAP/22_Transactions/TCODE_IW32.md).
  
-Il est donc nécessaire d’annuler la `commande de vente sur charges prévisionnelles` générée en référence au `devis` dans la [Transaction VA02](). C’est dans ce contexte que le programme devra intervenir.
+Il est donc nécessaire d’annuler la `commande de vente sur charges prévisionnelles` générée en référence au `devis` dans la [VA02](../../ABAP/22_Transactions/TCODE_VA02.md). C’est dans ce contexte que le programme devra intervenir.
 
 ## TECHNICAL DETAILS
 
@@ -51,7 +51,7 @@ Il est donc nécessaire d’annuler la `commande de vente sur charges prévision
 | `VBAP-POSNR`   | Poste de document de vente               | VBFA-POSNN |                                                 |
 | `VBAP-ABGRU`   | Motif de rejet des documents de vente    | Z2         |                                                 |
 
-Les instructions suivantes pourront être appelées directement au moment de la création de la `demande de facturation` [Transaction DP90]() (avec le `numéro d'ordre de service - AUFNR`) qui devrait appeler l’[Exit de commande]() (`Program SAPMV45A - Include MV45AFZZ - User-Exit USEREXIT_SAVE_DOCUMENT`).
+Les instructions suivantes pourront être appelées directement au moment de la création de la `demande de facturation` [DP90](../../ABAP/22_Transactions/TCODE_DP90.md) (avec le `numéro d'ordre de service - AUFNR`) qui devrait appeler l’[EXIT DE COMMANDE](../../ABAP/21_User_Exit/README.md) (`Program SAPMV45A - Include MV45AFZZ - User-Exit USEREXIT_SAVE_DOCUMENT`).
 
 Avec le `numéro d'ordre de service - AUFNR` en cours de traitement :
 
@@ -87,13 +87,13 @@ Vérifier qu’il n’y ait pas de `facture` (`VBFA-VBTYP_N = 'C' Commande clien
 
 ## TEST CASE
 
-L’`AUFNR - Numéro d'ordre de service` suivant `'9000044'` (visible dans la [Transaction IW33]()) dispose déjà dans son `[ flux de document ]` d’un `devis` accepté, et donc de la `commande` qui lui est associé.
+L’`AUFNR - Numéro d'ordre de service` suivant `'9000044'` (visible dans la [IW32](../../ABAP/22_Transactions/TCODE_IW32.md)) dispose déjà dans son `[ flux de document ]` d’un `devis` accepté, et donc de la `commande` qui lui est associé.
 
 ![](./Ressources/03.jpg)
 
-L’objectif du test est de générer une `demande de facturation sur charges réelles` [Transaction DP90]() qui devra en même temps modifier la `commande de vente - '1743002'` pour y ajouter les `motifs de refus` sur l’intégralité de ses `postes`.
+L’objectif du test est de générer une `demande de facturation sur charges réelles` [DP90](../../ABAP/22_Transactions/TCODE_DP90.md) qui devra en même temps modifier la `commande de vente - '1743002'` pour y ajouter les `motifs de refus` sur l’intégralité de ses `postes`.
  
-Aller dans la [Transaction DP90]() et ajouter le `numéro d'ordre de service` suivant `'900044'`.
+Aller dans la [DP90](../../ABAP/22_Transactions/TCODE_DP90.md) et ajouter le `numéro d'ordre de service` suivant `'900044'`.
 
 ![](./Ressources/04.jpg)
 
@@ -105,15 +105,15 @@ Appuyer sur `[ Oui ]` dans la pop-up.
 
 ![](./Ressources/06.jpg)
 
-Aller observer le résultat dans la [Transaction VA03]() avec le `numéro de commande '1743002'`. Vérifier que le `motif de refus 'Z2 Annulation automatique'` est bien renseigné sur l'intégralité des `postes`.
+Aller observer le résultat dans la [VA03]() avec le `numéro de commande '1743002'`. Vérifier que le `motif de refus 'Z2 Annulation automatique'` est bien renseigné sur l'intégralité des `postes`.
 
 ![](./Ressources/07.jpg)
 
 _Réutilisation_
 
- Pour réutiliser le même cas de test, aller dans la `demande de facturation` qui vient d’être créé (via la [Transaction DP90]()) et ajouter le `motif de refus 'Z1 : A traiter dans nv. Demande de facture'` sur l’ensemble des `postes`.
+ Pour réutiliser le même cas de test, aller dans la `demande de facturation` qui vient d’être créé (via la [DP90](../../ABAP/22_Transactions/TCODE_DP90.md)) et ajouter le `motif de refus 'Z1 : A traiter dans nv. Demande de facture'` sur l’ensemble des `postes`.
 
-Cela permettra de générer une nouvelle `demande de facture` via la [Transaction DP90]().
+Cela permettra de générer une nouvelle `demande de facture` via la [DP90](../../ABAP/22_Transactions/TCODE_DP90.md).
 
 ## PATCH DOCUMENT
 
@@ -147,7 +147,7 @@ Cela permettra de générer une nouvelle `demande de facture` via la [Transactio
 
     ![](./Ressources/10.jpg)
 
-2. [TRANSACTION SE24]()
+2. [TRANSACTION SE24](../../ABAP/22_Transactions/TCODE_SE24.md)
 
   - [ TYPE D'OBJET ] : `ZCL_SD_COMMON_TOOLS`
 
@@ -175,7 +175,7 @@ Cela permettra de générer une nouvelle `demande de facture` via la [Transactio
 
 ### Version Job
 
-2. [TRANSACTION SE24]()
+2. [TRANSACTION SE24](../../ABAP/22_Transactions/TCODE_SE24.md)
 
   - [ TYPE D'OBJET ] : `ZCL_SD_COMMON_TOOLS`
 
@@ -195,7 +195,7 @@ Cela permettra de générer une nouvelle `demande de facture` via la [Transactio
 
       ![](./Ressources/14.jpg)
 
-4. [TRANSACTION SM37]()
+4. [TRANSACTION SM37](../../ABAP/22_Transactions/TCODE_SM37.md)
 
   - [ JOBNAME ] : `Z_CANCEL_CS_1743002`
 
@@ -203,7 +203,7 @@ Cela permettra de générer une nouvelle `demande de facture` via la [Transactio
 
 ## PROGRAM
 
-### [SE80]() SAPMV45A
+### [SE80](../../ABAP/22_Transactions/TCODE_SE80.md) SAPMV45A
 
 ```abap
 FORM USEREXIT_SAVE_DOCUMENT.
@@ -225,7 +225,7 @@ FORM USEREXIT_SAVE_DOCUMENT.
 ENDFORM.
 ```
 
-### [SE24]() _CLASS_
+### [SE24](../../ABAP/22_Transactions/TCODE_SE24.md) _CLASS_
 
 - CLASS: ZCL_SD_COMMON_TOOLS
 
@@ -412,7 +412,7 @@ ENDFORM.
   ENDMETHOD.
 ```
 
-### [SE80]() ZSD_CANCEL_CS
+### [SE80](../../ABAP/22_Transactions/TCODE_SE80.md) ZSD_CANCEL_CS
 
 ```abap
 *&---------------------------------------------------------------------*
@@ -458,7 +458,7 @@ START-OF-SELECTION.
 END-OF-SELECTION.
 ```
 
-### [SE80]() ZSD_CANCEL_CS_SCR
+### [SE80](../../ABAP/22_Transactions/TCODE_SE80.md) ZSD_CANCEL_CS_SCR
 
 ```abap
 *&---------------------------------------------------------------------*
@@ -468,7 +468,7 @@ END-OF-SELECTION.
 PARAMETERS: P_AUFNR TYPE AUFNR OBLIGATORY.
 ```
 
-### [SE80]() ZSD_CANCEL_CS_F01
+### [SE80](../../ABAP/22_Transactions/TCODE_SE80.md) ZSD_CANCEL_CS_F01
 
 ```abap
 *&---------------------------------------------------------------------*
