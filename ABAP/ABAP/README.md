@@ -43,3 +43,7 @@
 - [20 ADOBE FORMS](./20_Adobe_Form/README.md)
 
 - [21 USER-EXIT](./21_User_Exit/README.md)
+
+- [22 TRANSACTIONS](./22_Transactions/README.md)
+
+- [23 OT](./23_OT/README.md)

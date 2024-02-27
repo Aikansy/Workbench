@@ -1,0 +1,63 @@
+# **OT**
+
+[TRANSACTION SE10](../22_Transactions/TCODE_SE10.md)
+
+![](../ressources/23_01_01.jpg)
+
+## CREATION OT
+
+1.  Créer...
+
+    ![](../ressources/23_01_02.jpg) 
+
+2.  Sélectionner l'ordre
+
+    ![](../ressources/23_01_03.jpg)
+
+3.  Nommer l'OT
+
+    ![](../ressources/23_01_04.jpg)
+
+## VISUALISATION OT
+
+1.  Entrer le créateur de l'OT désiré (ou *)
+
+    ![](../ressources/23_01_05.jpg)
+
+2.  Afficher
+
+    ![](../ressources/23_01_06.jpg)
+
+3.  Visualiser
+
+    ![](../ressources/23_01_07.jpg)
+
+## COMPARAISON OT
+
+1.  Double clic sur l'OT pour visulaiser les objets.
+
+    ![](../ressources/23_01_09.jpg)
+
+2.  Double clic sur l'objet à comparer.
+
+    ![](../ressources/23_01_10.jpg)
+
+3.  Utilitaires > Versions > Gestion des versions
+
+    ![](../ressources/23_01_08.jpg)
+
+4.  Sélectionner (avec [CTRL]) les versions à comparer (mauvais exemple ici car il n'y a qu'une seule version)
+
+    ![](../ressources/23_01_11.jpg)
+
+5.  Comparer
+
+    ![](../ressources/23_01_12.jpg)
+
+## MODIFICATION SUR UN OT
+
+1.  Créer un nouvel OT ou utiliser un OT spécifié préalablement.
+
+2.  Ouvrir l'objet à modifier en [SE80](), [SE24](), ...
+
+3.  Enregsitrer et activer l'objet sous le nouvel OT.
