@@ -10,6 +10,8 @@
 
 Ce document a pour but de détailler l’aspect fonctionnel et technique du programme permettant l’annulation des commandes issus des devis acceptés, fait dans le cadre du module CS, dans le cas où une demande de facturation est générée sur les charges réelles.
 
+## SCOPE
+
 ## FUNCTIONNAL REQUIREMENT
 
 ![](./Ressources/01.jpg)
@@ -78,8 +80,6 @@ Avec le `numéro d'ordre de service - AUFNR` en cours de traitement :
   - Ajouter le motif de refus `'Z2 Annulation automatique'` (`VBAP-ABGRU`) sur les `postes - VBAP-POSNR` trouvés.
 
   ![](./Ressources/02.jpg)
-
-## SCOPE
 
 ## CONTROLS
 

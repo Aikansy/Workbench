@@ -15,6 +15,20 @@ The objective of this functional specification is to :
 
 -	This report may be a Z transaction or a query 
 
+## SCOPE
+
+Tables involved :
+
+- BSEG
+
+- BKPF
+
+- LFA1
+
+- EKPO
+
+Any other table needed for this report can be added and should be added to the list above.
+
 ## FUNCTIONNAL REQUIREMENT
 
 Only Cost center responsibles, cost controllers, financial controller should be able to access this Z transaction or query. SAP roles will be modified accordingly.
@@ -60,25 +74,9 @@ _Fields to get to build_
 
 Le résultat devra être exportable vers Excel.
 
-## SCOPE
-
-Tables involved :
-
-- BSEG
-
-- BKPF
-
-- LFA1
-
-- EKPO
-
-Any other table needed for this report can be added and should be added to the list above.
-
 ## CONTROLS
 
 ## TEST CASE
-
-[Empty]
 
 ## PATCH DOCUMENT
 

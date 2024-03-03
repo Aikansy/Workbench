@@ -10,13 +10,13 @@
 
 Le client souhaiterait créer du surplus en quantité sur les OF fils crées au lancement des OF père.
 
+## SCOPE
+
 ## FUNCTIONNAL REQUIREMENT
 
 Pour cela, il faudrait modifier le form en objet ou éventuellement le MF ZPP_CREATE_OF_SF, je vous laisse juge de l'endroit le plus adapté.  
 
 ## TECHNICAL DETAILS
-
-## SCOPE
 
 ## CONTROLS
 
@@ -28,7 +28,7 @@ Pour faire des tests en dév, vous devriez pouvoir créer des OF sur le code ZU0
 
 ## PATCH
 
-26/02/24 : modifications non validées, pouvez-vous svp faire un retour arrière sur tout ce qui a été fait svp ? OT DE2K902891. Je m'occupe de supprimer les variables TVARV. Si on pouvait juste commenter le code au cas où ils changent encore d'avis.
+> 26/02/24 : modifications non validées, pouvez-vous svp faire un retour arrière sur tout ce qui a été fait svp ? OT DE2K902891. Je m'occupe de supprimer les variables TVARV. Si on pouvait juste commenter le code au cas où ils changent encore d'avis.
 
 ## TECHNICAL SOLUTION DESCRIPTION
 
