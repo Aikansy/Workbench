@@ -49,7 +49,7 @@ DATA: gt_data             TYPE STANDARD TABLE OF ty_data.
 
 `INCLUDE F01`
 
-```abap
+```js
 FORM bapi_processing.
     DATA:   lv_vbeln      LIKE vbak-vbeln,
             ls_headerx    LIKE bapisdhead1x,
